@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* nav style*/
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+    
+}
+.navbar{
+    position: fixed;
+    width:100%;
+    padding: 0 15px;
+    /* background-color: crimson; */
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+.sticky{
+    padding: 0 15px;
+    background: crimson;
+}
+
+nav.navbar.sticky {}
+.navbar .logo a{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 600px; 
+}
+.navbar .logo a span:first-child{
+    color:crimson;
+}
+.navbar .logo a span:nth-child(){
+    color:#fff;
+}
+.sticky .logo a span:first-child{
+    color: #fff;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:7px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    font-weight: 500px;
+}
+.navbar .menu li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500px;
+    margin-left:25px;
+    transition: 0.3s;
+    
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.sticky .menu li a:hover{
+    color:#fff;
+}
+.scroll-up-btn{
+    position: fixed;
+    height:45px;
+    width:42px;
+    background-color: crimson;
+    right:30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity:0;
+    pointer-events:none;
+    transition: all 0.3 ease;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events:auto;
+}
+/*menu btn style*/
+.menu-btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/*home section style*/
+.home{
+    display: flex;
+    background: url("images/collegedefrance.jpg") no-repeat  ;
+    height: 100vh;
+    background-size: cover;
+    color:crimson;
+    min-width: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    /* width:100vw; */
+}
+.home .max-width{
+    margin:auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 30px;
+}
+.home .home-content .text-2{
+    font-size: 70px;
+    font-weight: 500;
+    
+}
+.home .home-content .text-3{
+    font-size: 40px;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    background: crimson;
+    display: inline-block;
+    color:#fff;
+    font-size: 25px;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+    border: solid 2px crimson;
+}
+.home .home-content a:hover{
+    color:crimson;
+    background: none;
+}
+/* about section style */
+section{
+    padding: 100px 0;
+}
+.about, .services, .skills, .teams, .contact{
+    font-family: 'Poppins', sans-serif;
+ 
+}
+section .title{
+    position: relative;
+    font-family: 'Ubuntu', 'sans-serif';
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    bottom: -12px;
+    left:50%;
+    background: #111;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+   
+}
+section .title::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left:50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 1px;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+
+/* .about .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    bottom: -12px;
+    left:50%;
+    background: #111;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+} */
+.about .title::after{
+    content: "who I am";
+    /* position: absolute;
+    bottom: -20px;
+    left:50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 1px;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: all 0.3s ease; */
+}
+.about .about-content .left img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content{
+    display: flex;
+    /* align-items: space-between; */
+}
+.about .about-content .left{
+    width:45%;
+}
+.about .about-content .right{
+    width:55%;
+}
+.about .about-content a{
+    background: crimson;
+    display: inline-block;
+    color:#fff;
+    font-size: 20px;
+    padding: 13px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+    border: solid 2px crimson;
+}
+.about .about-content a:hover{
+    color:crimson;
+    background: none;
+}
+.about .about-content .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.about .about-content .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align:justify;
+}
+/* services section style */
+.services{
+    background: #111;
+    color:#fff;
+}
+.services .title::before{
+    background: #fff; 
+}  
+.services .title::after{
+    content: "what i provide"; 
+    background: #111;
+}  
+.services .serv-content{
+       display: flex;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    color:#fff;
+    margin-left: 20px;
+    padding: 10px 15px;
+}
+.services .serv-content .card i{
+    font-size: 40px;
+    color:crimson;
+}
+.services .serv-content .card .text{
+    font-size: 25px;  
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: crimson;
+    transform:scale(1.02);
+}
+.services .serv-content .card:hover i{
+    color:#fff;
+    
+}
+/* section skill style */
+.skills .skills-content{
+    display: flex;
+    position: absolute;
+    /* align-items: space-between; */
+    margin-bottom: 50px;
+}
+.skills .skills-content .column{
+    width: calc(50%-30px) !important;;
+}
+.skills .skills-content .left{
+    width:48%;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right{
+    width:50%;
+    margin-bottom: 100px;
+}
+.skills .title::after{
+    content: "what i know";
+    color: crimson; 
+    background: #fff;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 13px;
+}
+.skills .skills-content .right .infor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 300;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    background-color: lightgray;
+    width:100%;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    /* width:80%; */
+    left:0;
+    top:0;
+    background-color: crimson; 
+} 
+.skills .skills-content .right .html::before{
+    width:70%;
+    background-color: crimson;
+}
+.skills .skills-content .right .css::before{
+    width:65%;
+}
+.skills .skills-content .right .js::before{
+    width:60%;
+}
+.skills .skills-content .right .reactjs::before{
+    width:30%;
+}
+
+.skills .skills-content a{
+    background: crimson;
+    display: inline-block;
+    color:#fff;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 6px; 
+    transition: all 0.3s ease;
+    border: solid 2px crimson;
+}
+.skills .skills-content a:hover{
+    color:crimson;
+    background: none;
+}
+.teams .title::before{
+    background-color: #fff;
+}
+.teams .title:after{
+    content: "Who with me";
+    background:#111;
+    
+}
+.teams{
+    color:#fff;
+    background-color: #111;
+    margin-top: 200px;
+}
+.teams .carousel .card{
+    background-color: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+  
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 3px crimson;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+}
+.teams .carousel .card:hover{
+    background-color: crimson;
+}
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content {
+    
+   display: flex;
+}
+.contact .contact-content .left{
+    width:50%;
+    font-size: 20px;
+    
+}
+.contact .contact-content .right{
+    width:50%;
+}
+.contact .contact-content .left .hori{
+    display: flex;
+}
+.contact .contact-content .left .icon{
+    color:crimson;
+    font-size: 30px;
+    font-weight: 500;
+   margin-top: 5px;
+}
+.contact .contact-content .left .review{
+    padding-left:20px;
+}
+.left .review p:nth-child(1){
+    font-weight: 600;
+    font-size: 20px;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field, 
+.contact .right form .fields .field{
+    height:45px ;
+    width:100%;
+    margin-bottom: 15px;
+}
+.contact .right form textarea{
+    height: 80px;
+    width:100%;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form textarea
+{
+    height:100% ;
+    width:100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+}
+.contact .right form .button{
+    height:47px;
+    width:100%;
+}
+.contact .right form .button button{
+    width: 30%;
+    height: 100%;
+    background-color: crimson;
+    border-radius: 6px;
+    color:#fff;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    background-color: #fff;
+    color:crimson;
+    border: solid 2px crimson;
+
+}
+
+@media (max-width:1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width:991px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .about .about-content .left img{
+        width: 350px;
+        height: 350px;
+        
+    }
+}
+@media (max-width:947px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content:"\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height:100vh;
+        width:100%;
+        left:-100%;
+        top:0;
+        background: #111;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .navbar .menu.active{
+        left:0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px;
+        font-size: 25px;
+        
+    }
+    .home .max-width .text-1{
+        font-size: 25px;
+    }
+    .home .max-width .text-2{
+        font-size: 60px;
+        font-weight: 500;
+        
+    }
+    .home .max-width .text-3{
+        font-size: 38px;
+    }
+    
+    .home .home-content a{
+        font-size: 22px;
+        padding: 10px 15px;
+    }
+    .max-width{
+        max-width:800px;
+    }
+    .about .about-content .column{
+        width:100%;
+    }
+    .about .about-content{
+        flex-direction: column;
+    }
+
+    .about .about-content .left{
+       display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about .about-content .right{
+        flex: 100%;
+        width:100%;
+    }
+    .services .serv-content .card{
+        width:calc(50%-10px);
+    }
+    
+
+
+}
+@media (max-width:690px){
+    .max-width{
+        padding:0 15px;
+    }
+    .home .max-width .text-2{
+        font-size: 50px; 
+    }
+    .home .max-width .text-3{
+        font-size: 25px;
+    }
+    .home .home-content a{
+        font-size: 22px;
+        padding: 10px 15px;
+    }
+
+    .services .serv-content{
+        flex-direction: column;
+        
+    }
+    .services .serv-content .card{
+        margin-bottom: 15px;
+        width:100%;
+    }
+    .skills .skills-content {
+        flex-direction: column;
+    }
+    .skills .skills-content .left{
+        width: 100%;
+    }
+    .skills .skills-content .right{
+        width: 100%;
+    }
+    .contact .contact-content{
+        flex-direction: column;
+    }
+    .contact .contact-content .left{
+        width:100%;
+    }
+    .contact .contact-content .right{
+        width:100%;
+    }
+
+
+}
